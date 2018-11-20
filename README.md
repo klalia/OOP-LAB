@@ -8,14 +8,22 @@ OOP is based around objects rather than actions and data rather than logic. It c
 
 Inheritance is where there is a super classes and a sub classes. The sub class inherits methods and fields from the parent class and can also include method and fields of there own. A benefit of inheritance is that it prevents DRY (repeated code).
 
+For example, the zebra class is a subclass of the animal class. This is portrayed in one of the first lines of the zebra file (class Zebra < Animal).
+
 ### Polymorphism
 
 Polymorphism is the ability of an object to take on many forms. For example overriding is a method of polymorphism. This is by overring the previous method by writing the same class name with the new method.
+
+For example using 'Super()' in the zebra file for the eat method, it overrides that methods to print the string in that function rather than the one defined in the animal file.
 
 ### Encapsulation
 
 Encapsulation is the process of combining both functions and data in a single unit, for example a class. In encapsulation the data is not accessed directly, it is accessed through the functions present inside the class. The attributes inside the class are kept private and public methods are provided to manipulate the attributes.
 
+For example with a class method, we had to put self.name to be able to call it in that class. If it was going to be accessed outside it would be a instance method. Encapsulation is the instance method where we need to instantiate the method in order to use it. In the animal, staff and prices files they all use instance methods.
+
 ### Abstraction
 
 Abstraction is hiding the complexity of the code and just portraying the code relevant to the user. For example with a phone, a user only wants to use the home button which is shown to them and expects it to take them to the home screen, how this process is carried out is hidden through the use of abstraction.
+
+For example, using the module. This is used in the animal-types/mammals.rb referring to module Mammals
